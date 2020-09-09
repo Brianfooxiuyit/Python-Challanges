@@ -1,0 +1,17 @@
+import turtle
+import random
+tom = turtle
+tom.color("green")
+
+tom.penup()
+def triangle(quantity):
+    for count in range(quantity):
+        tom.goto(random.randint(0,1000),random.randint(0,1000))
+        tom.pendown()
+        for i in range(3):
+            tom.fd(100)
+            tom.lt(120)
+        tom.penup()
+        
+
+triangle(100)
