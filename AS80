@@ -1,0 +1,12 @@
+def A(r):
+    area = 3.142 * r * r
+    print(area)
+    return A
+
+def C(radius):
+    circumference = 2 * 3.142 * radius
+    print(circumference)
+    return C
+    
+A(5)
+C(1)
