@@ -1,0 +1,9 @@
+vowel = ['a','e','i','o','u']
+def Make_string_Laugh(word):
+    word_ar = list(word)
+    for i in range(0,len(word_ar)):
+        if word_ar[i] in vowel:
+            word_ar[i] = 'haha'
+    vowel_final = ''.join(word_ar)
+    print(vowel_final)
+Make_string_Laugh("elephant")
