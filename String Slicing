@@ -1,0 +1,7 @@
+MyString1 = "abcdef"
+print(MyString1[0:3])
+
+MyString2 = "Helol"
+print(MyString2[0:3])
+print(MyString2[-1:-6:-1])
+print(MyString2[0:5:2])
