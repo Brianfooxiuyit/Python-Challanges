@@ -1,0 +1,5 @@
+MyChar = input('Input a char')
+if len(MyChar) != 1:
+    print("This is not a char")
+else:
+    print("You are a char")
