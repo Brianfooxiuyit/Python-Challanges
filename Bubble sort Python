@@ -1,0 +1,15 @@
+Itemlist = [4,6,2,3,8,1,9,5,7,0]
+temp = ''
+MaxIndex = len(Itemlist)
+
+while MaxIndex != 0:
+    for i in range(0,MaxIndex-1):
+        if Itemlist[i] > Itemlist[i+1]:
+            temp = Itemlist[i]
+            Itemlist.pop(i)
+            Itemlist.insert(i,Itemlist[i])
+            
+            Itemlist.pop(i+1)
+            Itemlist.insert(i+1,temp)
+    MaxIndex = MaxIndex - 1
+print(Itemlist)
