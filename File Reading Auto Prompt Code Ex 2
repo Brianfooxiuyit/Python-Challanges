@@ -1,4 +1,9 @@
 import time
+with open("if.txt","r") as whole_file:
+   for line in whole_file:
+        print(line,end="")
+        time.sleep(3)
+        
 with open("mam.txt","r") as whole_file:
    for line in whole_file:
         print(line,end="")
