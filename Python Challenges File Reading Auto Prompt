@@ -1,0 +1,5 @@
+import time
+with open("if.txt","r") as whole_file:
+   for line in whole_file:
+        print(line,end="")
+        time.sleep(3)
