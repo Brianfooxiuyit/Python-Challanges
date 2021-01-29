@@ -9,30 +9,30 @@ random.shuffle(question_ar)
 print('')
 
 while len(question_ar) != counter:
-  for i in range (0,5):
-    print(question_ar[counter][i])  
+    for i in range (0,5):
+        print(question_ar[counter][i])  
   
-  print('') 
-  print("Input your answer: ")
-  answer = input()
-  while answer != "a" or "b" or "c" or "d":
-    print("The answer you typed is in valid, try again. ")
+    print('') 
+    print("Input your answer: ")
     answer = input()
+    while answer not in ["a","b","c","d"]:
+        print("The answer you typed is invalid, try again. ")
+        answer = input()
   
-  if answer != question_ar[counter][5]:
-    print("Your answer is incorrect")
-    print("Current score:" ,score)  
+    if answer != question_ar[counter][5]:
+        print("Your answer is incorrect")
+        print("Current score:" ,score)  
     
-  else:
-    score = score + 1
-    print("Your answer is correct")
-    print("Current score:" ,score)
+    else:
+        score = score + 1
+        print("Your answer is correct")
+        print("Current score:" ,score)
     
-  counter = counter + 1
-  print('')
+    counter = counter + 1
+    print('')
  
 print('Score = ',score)
 if score < 2:
-  print("you're not the sharpest tool in the shed")
+    print("you're not the sharpest tool in the shed")
 else:
-  print('goodjob')
+    print('goodjob')
