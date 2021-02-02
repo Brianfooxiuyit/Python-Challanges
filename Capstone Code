@@ -7,7 +7,7 @@ question_ar = [["How to do while in pseudocode? ","a - WHILE ","b - while()","c 
 counter = 0
 random.shuffle(question_ar)
 print('')
-
+name = input("What is your name: ")
 while len(question_ar) != counter:
     for i in range (0,5):
         print(question_ar[counter][i])  
@@ -36,3 +36,11 @@ if score < 2:
     print("you're not the sharpest tool in the shed")
 else:
     print('goodjob')
+score = str(score)
+name = str(name)
+file = open("highscore.txt",'a')
+file.write(name)
+file.write()
+file.write(score)
+file.write('\n')
+file.close()
